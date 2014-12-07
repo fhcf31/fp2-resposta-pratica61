@@ -11,7 +11,7 @@ import java.util.HashMap;
  * @author Fernando
  */
 public class Time {
-    private HashMap<String, Jogador> time;
+    private final HashMap<String, Jogador> time;
     
     public Time(){
         time = new HashMap<>();

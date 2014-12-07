@@ -10,8 +10,8 @@ package utfpr.ct.dainf.if62c.pratica;
  * @author Fernando
  */
 public class Jogador {
-    private int numero;
-    private String nome;
+    private final int numero;
+    private final String nome;
 
     public Jogador(int numero, String nome) {
         this.numero = numero;
