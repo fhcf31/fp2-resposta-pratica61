@@ -5,6 +5,8 @@
  */
 package utfpr.ct.dainf.if62c.pratica;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -23,5 +25,13 @@ public class Time {
     
     public void addJogador(String a, Jogador j){
         time.put(a,j);
+    }
+    
+    @Override
+    public String toString() {
+        String s = "";
+        Set<String> chaves = time.keySet();
+        s = chaves.stream().map((chave) -> (chave + ": " + time.get(chave)+"\t")).reduce(s, String::concat);
+        return s;
     }
 }
